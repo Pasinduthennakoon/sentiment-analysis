@@ -1,53 +1,66 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Insights</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>App</title>
 </head>
 <body>
 
-    <div class="split left">
-        <div class="centered">
-            <img src="../static/products/prod1.jpg" alt="">
+<div class="container main-wrapper">
+    <div class="row main-card no-gutters">
+        
+        <div class="col-lg-5 product-viewport">
+            <div class="image-container">
+                <img src="../static/products/prod1.jpg" alt="Product">
+            </div>
         </div>
-    </div>
 
-     <div class="split right">
-        <div class="container mt-5 mb-5">
-            <div class="d-flex justify-content-center row">
-                <div class="d-flex flex-column col-md-8">
+        <div class="col-lg-7 content-viewport">
+            <header class="content-header">
+                <h2>Product Feedback</h2>
+                <p class="text-muted">Analyze customer sentiment in real-time.</p>
+            </header>
 
-                    <div>
-                        <label for="">Positive Sentiments : {{ data.positive }}</label>
+            <div class="row sentiment-grid">
+                <div class="col-6">
+                    <div class="stat-card pos">
+                        <span class="stat-label">Positive</span>
+                        <span class="stat-value">{{ data.positive }}</span>
                     </div>
-                    <div>
-                        <label for="">Negative Sentiments : {{ data.negative }}</label>
+                </div>
+                <div class="col-6">
+                    <div class="stat-card neg">
+                        <span class="stat-label">Negative</span>
+                        <span class="stat-value">{{ data.negative }}</span>
                     </div>
-                    
-                    <div>
-                        <form method="post">
-                          <textarea name="text"></textarea>
-                          <input type="submit">
-                        </form>
-                    </div>
+                </div>
+            </div>
 
-                    <div class="coment-bottom bg-white p-2 px-4">
-                        {% for review in data.reviews %}
-                        <hr/>
-                          <div
-                              class="commented-section mt-2">
-                              <div class="d-flex flex-row align-items-center commented-user">
-                                  </div>
-                                  <div class="text-nowrap bd-highlight"><span>{{ review }}</span></div>
-                                  <hr/>
-                        {% endfor %}
-                      </div>
-                      
+            <form method="post" class="feedback-form">
+                <textarea name="text" placeholder="Write a review..."></textarea>
+                <button type="submit" class="btn-modern">Submit Analysis</button>
+            </form>
+
+            <div class="review-feed">
+                <h6 class="feed-title">Recent Activity</h6>
+                <div class="feed-container">
+                    {% for review in data.reviews %}
+                    <div class="review-bubble">
+                        {{ review }}
+                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
+
     </div>
+</div>
+
 </body>
 </html>
