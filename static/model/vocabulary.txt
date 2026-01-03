@@ -53,7 +53,7 @@ c
 charger
 cabl
 uk
-…
+â¦
 amazon
 year
 newyear
@@ -177,7 +177,7 @@ life
 food
 instago
 instahub
-instagram…
+instagramâ¦
 friendship
 dog
 famili
@@ -256,7 +256,7 @@ reflect
 rememb
 cloud
 gr
-iphone…
+iphoneâ¦
 babi
 pet
 news
@@ -285,7 +285,7 @@ month
 good
 job
 actual
-£
+â£
 replac
 that
 still
@@ -353,8 +353,8 @@ teamfollowback
 retweet
 ya
 thing
-i’m
-it’
+iâm
+itâ
 alreadi
 problem
 issu
@@ -368,7 +368,7 @@ win
 box
 memori
 brother
-–
+â
 oh
 lip
 enjoy
@@ -520,7 +520,7 @@ th
 refus
 night
 son
-instagood…
+instagoodâ¦
 jj
 makeup
 valentinesday
@@ -537,7 +537,7 @@ addict
 prophet
 husband
 kindl
-a…
+aâ¦
 upgrad
 help
 children
@@ -551,7 +551,7 @@ world
 old
 followm
 likelik
-samsung…
+samsungâ¦
 swag
 cat
 edit
@@ -650,7 +650,7 @@ convers
 wouldnt
 small
 blue
-—
+â
 steemit
 sonylen
 len
@@ -677,7 +677,7 @@ drink
 purpl
 tasti
 garden
-андроид
+ðð½ð´ñð¾ð¸ð´
 guy
 bestpric
 jun
@@ -792,7 +792,7 @@ captur
 futur
 cell
 instalik
-sony…
+sonyâ¦
 march
 proud
 hateiphon
@@ -942,13 +942,13 @@ vocat
 thailand
 khaoko
 ilc
-snapspeed…
+snapspeedâ¦
 merri
 htc
 onlin
 psn
 flash
-•
+â¢
 treat
 tagsforlik
 cost
@@ -1113,7 +1113,7 @@ macbookair
 mountain
 kind
 decemb
-apple…
+appleâ¦
 shoppinglist
 gs
 spotifi
