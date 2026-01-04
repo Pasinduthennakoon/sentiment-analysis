@@ -29,7 +29,7 @@ def my_post():
     preprocessd_text = preprocessing(text)
     logging.info(f"preprocessed text: {preprocessd_text}")
 
-    vectorized_text = vectorizer(preprocessd_text)
+    vectorized_text = vectorizer.transform([preprocessd_text])
     logging.info(f"vectorized text: {vectorized_text}")
     
     prediction = get_prediction(vectorized_text)
